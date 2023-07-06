@@ -36,7 +36,11 @@ html {
   background: var(--neutrals-n-40);
 }
 
-header {
+li {
+  list-style: none;
+}
+
+nav {
   display: flex;
   padding-block: 2rem 1.5rem;
   padding-inline: 1.5rem;
