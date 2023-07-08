@@ -2,69 +2,266 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/layout.css" />
     <link rel="stylesheet" href="css/style.css" />
     <title>IsaMarvin | Software Engineer</title>
   </head>
-  <body>
-    <header class="header">
-      <nav>
-        <img src="./images/my-logo.svg" alt="logo" />
-        <img src="./images/hamberger.svg" alt="hamburger" />
-      </nav>
-    </header>
 
-    <section class="wrapper">
-      <div class="hero">
-        <h1 class="hero__title">I’m IsaMarvin. Glad to see you!</h1>
-        <p class="hero__description">
-          I’m a software developer! I can help you build a product, feature, or
-          website. Look through some of my work and experience! If you like what
+  <body>
+    <header>
+      <div class="header__wrapper header__wrapper--items flex">
+        <a href="#" title="logo">
+          <img src="./images/my-logo.svg" alt="logo" />
+        </a>
+        <nav>
+          <img src="./images/hamburger.svg" alt="hamburger menu" />
+        </nav>
+      </div>
+    </header>
+    <section class="intro flex">
+      <div class="info__items flex flx-dir-col">
+        <h1 class="info__heading">I’m Isa Glad to see you!</h1>
+        <p class="info__txt">
+          I’m a software developer! I can help you build a product , feature or
+          website Look through some of my work and experience! If you like what
           you see and have a project you need coded, don’t hesitate to contact
           me.
         </p>
-        <p class="hero__connect">LET’S CONNECT</p>
-        <ul class="social">
+        <h3 class="info__subheading">LET’S CONNECT</h3>
+        <ul class="info__social flex">
           <li>
-            <a href="#" title="social links" class="social__link"
-              ><img
-                class="social__icon"
-                src="./images/social/twitter.svg"
-                alt="twitter"
+            <a href="#" title="social links"
+              ><img src="./images/social/twitter.svg" alt="twitter"
             /></a>
           </li>
           <li>
-            <a href="#" title="social links" class="social__link"
-              ><img
-              class="social__icon"
-                src="./images/social/linkedin.svg"
-                alt="linkedin"
+            <a href="#" title="social links"
+              ><img src="./images/social/linkedin.svg" alt="linkedin"
             /></a>
           </li>
           <li>
-            <a href="#" title="social links" class="social__link"
-              ><img
-              class="social__icon"
-                src="./images/social/medium.svg"
-                alt="medium"
+            <a href="#" title="social links"
+              ><img src="./images/social/medium.svg" alt="medium"
             /></a>
           </li>
           <li>
-            <a href="#" title="social links" class="social__link"
-              ><img
-              class="social__icon"
-                src="./images/social/github.svg"
-                alt="github"
+            <a href="#" title="social links"
+              ><img src="./images/social/github.svg" alt="github"
             /></a>
           </li>
           <li>
-            <a href="#" title="social links" class="social__link"
-              ><img
-              class="social__icon"
-                src="./images/social/vector.svg"
-                alt="vector"
+            <a href="#" title="social links"
+              ><img src="./images/social/vector.svg" alt="vector"
             /></a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="works grid">
+      <div class="card flex flx-dir-col">
+        <img
+          class="card__img"
+          src="./images/snapshoot/snapshot_1.png"
+          alt=""
+          
+        />
+        <div class="card__hero flex flx-dir-col">
+          <h4 class="card__heading tst">Tonic Stories</h4>
+          <ul class="card__tags flex">
+            <li class="card__items--dark">CANOPY</li>
+            <li class="dot"></li>
+            <li class="card__items">Back End Dev</li>
+            <li class="dot"></li>
+            <li class="card__items">2015</li>
+          </ul>
+          <p class="card__description">
+            A daily selection of privately personalized reads; no accounts or
+            sign-ups required.
+            A daily selection of privately personalized reads; no accounts or
+            sign-ups required.
+          </p>
+          <ul class="card__lango flex">
+            <li class="card__lists">html</li>
+            <li class="card__lists">css</li>
+            <li class="card__lists">javaScript</li>
+          </ul>
+          <button class="card__button" type="button">See Project</button>
+        </div>
+      </div>
+      <div class="card flex flx-dir-col">
+        <img
+          class="card__img"
+          src="./images/snapshoot/snapshot_2.png"
+          alt=""
+
+        />
+        <div class="card__hero flex flx-dir-col">
+          <h4 class="card__heading">Multi-Post Stories</h4>
+          <ul class="card__tags flex">
+            <li class="card__items--dark">CANOPY</li>
+            <li class="dot"></li>
+            <li class="card__items">Back End Dev</li>
+            <li class="dot"></li>
+            <li class="card__items">2015</li>
+          </ul>
+          <p class="card__description">
+            A daily selection of privately personalized reads; no accounts or
+            sign-ups required.
+            A daily selection of privately personalized reads; no accounts or
+            sign-ups required.
+          </p>
+          <ul class="card__lango flex">
+            <li class="card__lists">html</li>
+            <li class="card__lists">css</li>
+            <li class="card__lists">javaScript</li>
+          </ul>
+          <button class="card__button" type="button">See Project</button>
+        </div>
+      </div>
+      <div class="card flex flx-dir-col">
+        <img
+          class="card__img"
+          src="./images/snapshoot/snapshot_3.png"
+          alt=""
+
+        />
+        <div class="card__hero flex flx-dir-col">
+          <h4 class="card__heading">Tonic</h4>
+          <ul class="card__tags flex">
+            <li class="card__items--dark">CANOPY</li>
+            <li class="dot"></li>
+            <li class="card__items">Back End Dev</li>
+            <li class="dot"></li>
+            <li class="card__items">2015</li>
+          </ul>
+          <p class="card__description">
+            A daily selection of privately personalized reads; no accounts or
+            sign-ups required.
+            A daily selection of privately personalized reads; no accounts or
+            sign-ups required.
+          </p>
+          <ul class="card__lango flex">
+            <li class="card__lists">html</li>
+            <li class="card__lists">css</li>
+            <li class="card__lists">javaScript</li>
+          </ul>
+          <button class="card__button" type="button">See Project</button>
+        </div>
+      </div>
+      <div class="card flex flx-dir-col">
+        <img
+          class="card__img"
+          src="./images/snapshoot/snapshot_4.png"
+          alt=""
+         
+        />
+        <div class="card__hero flex flx-dir-col">
+          <h4 class="card__heading">Multi-Post Stories</h4>
+          <ul class="card__tags flex">
+            <li class="card__items--dark">CANOPY</li>
+            <li class="dot"></li>
+            <li class="card__items">Back End Dev</li>
+            <li class="dot"></li>
+            <li class="card__items">2015</li>
+          </ul>
+          <p class="card__description">
+            A daily selection of privately personalized reads; no accounts or
+            sign-ups required.
+            A daily selection of privately personalized reads; no accounts or
+            sign-ups required.
+          </p>
+          <ul class="card__lango flex">
+            <li class="card__lists">html</li>
+            <li class="card__lists">css</li>
+            <li class="card__lists">javaScript</li>
+          </ul>
+          <button class="card__button" type="button">See Project</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="about">
+      <div class="info__items flex flx-dir-col">
+        <h2 class="info__heading">About Myself</h2>
+        <p class="info__txt">
+          Hello I’m a software developer! I can help you build a product ,
+          feature or website Look through some of my work and experience! If you
+          like what you see and have a project you need coded, don’t hestiate to
+          contact me.
+        </p>
+        <h3 class="info__subheading info__subheading--about">LET’S CONNECT</h3>
+        <ul class="info__social info__social--about flex">
+          <li>
+            <a href="#" title="social links"
+              ><img src="./images/social/github.svg" alt="github"
+            /></a>
+          </li>
+          <li>
+            <a href="#" title="social links"
+              ><img src="./images/social/linkedin.svg" alt="linkedin"
+            /></a>
+          </li>
+          <li>
+            <a href="#" title="social links"
+              ><img src="./images/social/vector.svg" alt="vector"
+            /></a>
+          </li>
+          <li>
+            <a href="#" title="social links"
+              ><img src="./images/social/twitter.svg" alt="twitter"
+            /></a>
+          </li>
+          <li>
+            <a href="#" title="social links"
+              ><img src="./images/social/medium.svg" alt="medium"
+            /></a>
+          </li>
+        </ul>
+        <button class="card__button card__button--about" type="button">
+          Get my resume
+        </button>
+        <ul class="skills">
+          <li>
+            <details open>
+              <summary class="flex stack">
+                <h4 class="stack__item">Languages</h4>
+                <img class="arrow" src="./images/arrow.svg" alt="" />
+              </summary>
+              <ul class="lang flex flx-dir-col">
+                <li class="lang__items grid">
+                  <img
+                    src="./images/languages/javascript.svg"
+                    alt="javaScript"
+                  />
+                  <h4>JavaSript</h4>
+                </li>
+                <li class="lang__items grid">
+                  <img src="./images/languages/html.svg" alt="html" />
+                  <h4>HTML</h4>
+                </li>
+                <li class="lang__items grid">
+                  <img src="./images/languages/css.svg" alt="css" />
+                  <h4>CSS</h4>
+                </li>
+              </ul>
+            </details>
+            <details>
+              <summary class="flex border">
+                <h3 class="">Frameworks</h3>
+                <img src="./images/arrow.svg" alt="arrow icon" />
+              </summary>
+            </details>
+            <details>
+              
+              <summary class="flex border">
+                <h3 class="">Skills</h3>
+                <img src="./images/arrow.svg" alt="arrow icon" />
+              </summary>
+            </details>
           </li>
         </ul>
       </div>
