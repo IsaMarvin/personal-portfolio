@@ -101,21 +101,17 @@
 
 .skills summary {
   justify-content: space-between;
-  padding: 1rem 0;
+  padding: 1.5rem 0;
 }
 
 .arrow {
   transform: rotate(90deg);
 }
 
-.lang {
-  margin-top: 2rem;
-}
-
 .lang__items {
   gap: 1rem;
   padding: 1rem;
-  margin: 1rem;
+  margin: 0.75rem 0;
   border-radius: 0.8rem;
   grid-template-columns: 1fr 6fr;
 }
