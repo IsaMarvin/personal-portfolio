@@ -171,11 +171,11 @@ footer {
   border-top-left-radius: 10rem;
 }
 
-/* .contact__heading {
+.contact__heading {
   color: var(--neutrals-n-0);
   text-align: center;
   font: 700 2.5rem/3.25rem Poppins, sans-serif;
-} */
+}
 
 .contact__info {
   color: var(--primary-b-50);
