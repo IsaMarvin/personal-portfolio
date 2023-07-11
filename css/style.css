@@ -189,10 +189,7 @@ footer {
   border-radius: 0.5rem;
 }
 
-input:focus {
-  outline-color: var(--primary-b-300);
-}
-
+input:focus,
 textarea:focus {
   outline-color: var(--primary-b-300);
 }
