@@ -114,7 +114,6 @@ li {
   color: var(--primary-b-500);
   background-color: var(--neutrals-n-0);
   text-align: center;
-  letter-spacing: 0.03188rem;
   font: 500 1.0625rem/1.5rem Poppins, sans-serif;
 }
 
@@ -161,4 +160,48 @@ li {
 
 .border {
   border-bottom: 1px solid var(--neutrals-n-40);
+}
+
+footer {
+  background-color: var(--neutrals-n-0);
+}
+
+.contact {
+  background: url(../images/footer-bg.svg) var(--primary-b-400) top right no-repeat;
+  border-top-left-radius: 10rem;
+}
+
+.contact__heading {
+  color: var(--neutrals-n-0);
+  text-align: center;
+  font: 700 2.5rem/3.25rem Poppins, sans-serif;
+}
+
+.contact__info {
+  color: var(--primary-b-50);
+  text-align: center;
+  font: 400 1.25rem/1.75rem Poppins, sans-serif;
+}
+
+.input {
+  background: var(--neutrals-n-0);
+  border: 1px solid var(--neutrals-n-40);
+  border-radius: 0.5rem;
+}
+
+input:focus,
+textarea:focus {
+  outline-color: var(--primary-b-300);
+}
+
+input::placeholder {
+  color: var(--neutrals-n-800);
+  font: 400 0.9375rem/1.5rem Poppins, sans-serif;
+}
+
+.footer__btn {
+  color: var(--primary-b-400, #6070ff);
+  font: 500 1.0625rem/1.5rem Poppins, sans-serif;
+  border: 1px solid var(--neutrals-n-0);
+  text-align: center;
 }

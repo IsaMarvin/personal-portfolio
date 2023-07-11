@@ -30,7 +30,7 @@
 
 # 📖 Personal Portfolio <a name="about-project"></a>
 
-This is the Portfolio Microverse project! I've created it using HTML and CSS. It includes the implementation of the Works and About me sections as per the provided design.
+This is the Portfolio Microverse project! I've created it using HTML and CSS. It includes the implementation of the contact form section as per the provided design.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -48,7 +48,7 @@ This is the Portfolio Microverse project! I've created it using HTML and CSS. It
 
 ### Key Features <a name="key-features"></a>
 
-- Implemented the Works and about me sections.
+- Implemented the contact form section.
 - Utilized flexbox and grid for layout and responsiveness.
 - Styled the elements to match the design, including fonts, colors, images, text, and margins.
 - Added button interactions such as hover, enable active effects.
@@ -117,11 +117,10 @@ Open index.html using live server extension.
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-> Describe 1 - 3 features you will add to the project.
 
-- [ ] **[Toolbar_Hero_section]**
-- [ ] **[My_Recent_works]**
-- [ ] **[About_Me]**
+- [ ] **[Contact form]**
+- [ ] **[Html user validation]**
+
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
