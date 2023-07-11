@@ -177,11 +177,11 @@ footer {
   font: 700 2.5rem/3.25rem Poppins, sans-serif;
 } */
 
-/* .contact__info {
+.contact__info {
   color: var(--primary-b-50);
   text-align: center;
   font: 400 1.25rem/1.75rem Poppins, sans-serif;
-} */
+}
 
 .input {
   background: var(--neutrals-n-0);
