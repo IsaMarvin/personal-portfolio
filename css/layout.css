@@ -119,3 +119,32 @@
 .lang__items h4 {
   align-self: center;
 }
+
+.contact {
+  padding: 7.5rem 2rem 2.5rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact__heading {
+  height: 3.5rem;
+}
+
+.contact__info {
+  margin-bottom: 3.2rem;
+}
+
+.input {
+  width: 80vw;
+  max-width: 28rem;
+  padding: 0.95rem 1rem;
+}
+
+.form__items {
+  gap: 1.2rem;
+}
+
+.footer__btn {
+  width: 7rem;
+  padding: 0.75rem 1rem;
+}
