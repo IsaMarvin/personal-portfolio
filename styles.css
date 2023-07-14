@@ -454,6 +454,11 @@ input::placeholder {
     margin: 0;
   }
 
+  .wrapper {
+    background: url(./images/desktop-footer.svg) var(--primary-b-400);
+    background-size: contain;
+  }
+
   .footer-btn {
     align-self: center;
   }
