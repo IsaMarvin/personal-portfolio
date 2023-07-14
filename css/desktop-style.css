@@ -1,0 +1,21 @@
+.nav a {
+  color: var(--neutrals-n-600);
+  text-align: center;
+  font: 500 0.9375rem/1.25 Poppins, sans-serif;
+}
+
+.intro {
+  background: url(../images/header.svg) var(--neutrals-n-0);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.intro-hero h1 {
+  max-width: 25rem;
+  letter-spacing: 0.02313rem;
+  font: 700 3rem/3.75rem Poppins, sans-serif;
+}
+
+.intro-hero p {
+  font: 400 1.25rem/1.75rem Poppins, sans-serif;
+}

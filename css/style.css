@@ -1,0 +1,221 @@
+:root {
+  --black: #000;
+  --gainsboro: #cfd8dc;
+  --neutrals-n-0: #fff;
+  --neutrals-n-10: #f7f7f9;
+  --neutrals-n-40: #dfe1e6;
+  --neutrals-n-50: #c1c7d0;
+  --neutrals-n-60: #b3bac5;
+  --neutrals-n-100: #7a869a;
+  --neutrals-n-300: #5e6c84;
+  --neutrals-n-400: #505f79;
+  --neutrals-n-600: #344563;
+  --neutrals-n-700: #253858;
+  --neutrals-n-800: #172b4d;
+  --cornflower-blue: #6070ff;
+  --light-pastel-blue: #7f8cff;
+  --primary-b-50: #ebebff;
+  --primary-b-100: #cbcdff;
+  --primary-b-300: #7f8cff;
+  --primary-b-400: #6070ff;
+  --primary-b-500: #396df2;
+  --midnight-blue: #0d151e;
+  --lavender-mist: #ebebff;
+  --base-500-secondary: #67798e;
+  --deep-blue: #2230d2;
+}
+
+html {
+  background-color: var(--neutrals-n-10);
+  scroll-behavior: smooth;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+header,
+footer {
+  background-color: var(--neutrals-n-0);
+}
+
+.intro {
+  background: url(../images/header-bg.svg) var(--neutrals-n-0);
+  background-size: cover;
+  border-bottom-left-radius: 5rem;
+}
+
+.intro-hero h1 {
+  color: var(--neutrals-n-800);
+  font: 700 2.5rem/3.25rem Poppins, sans-serif;
+}
+
+.intro-hero p {
+  color: var(--neutrals-n-600);
+  font: 400 1rem/1.5rem Poppins, sans-serif;
+}
+
+.intro-hero h3 {
+  color: var(--primary-b-300);
+  font: 500 1rem/1.5rem Poppins, sans-serif;
+}
+
+.work {
+  background-color: var(--neutrals-n-10);
+}
+
+.card {
+  background-color: var(--neutrals-n-0);
+  border: 1px solid var(--neutrals-n-40);
+  border-radius: 1.5rem;
+}
+
+.card-title h3 {
+  color: var(--neutrals-n-800);
+  font: 700 2rem/2.75rem Poppins, sans-serif;
+}
+
+.card__tags {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.dot {
+  background-color: var(--neutrals-n-50);
+}
+
+.card__items--dark {
+  color: var(--neutrals-n-600);
+  font: 600 0.8125rem/1rem Poppins, sans-serif;
+}
+
+.card__items {
+  color: var(--neutrals-n-100);
+  font: 600 0.8125rem/1rem Poppins, sans-serif;
+}
+
+.card-info p {
+  color: var(--neutrals-n-600);
+  font: 400 0.9375rem/1.5rem Poppins, sans-serif;
+}
+
+.card__lists {
+  border-radius: 0.5rem;
+  background: var(--primary-b-50);
+  color: var(--primary-b-400);
+  font: 500 0.75rem/1rem Poppins, sans-serif;
+}
+
+.card__button {
+  border-radius: 0.5rem;
+  border: 1px solid var(--primary-b-400);
+  color: var(--primary-b-500);
+  background-color: var(--neutrals-n-0);
+  text-align: center;
+  font: 500 1.0625rem/1.5rem Poppins, sans-serif;
+}
+
+.card__button:hover {
+  color: var(--neutrals-n-0);
+  background: var(--cornflower-blue);
+}
+
+.card__button:active {
+  background: var(--deep-blue);
+  color: var(--white);
+}
+
+.card__button:disabled {
+  background: var(--neutrals-n-0);
+  color: var(--neutrals-n-300);
+}
+
+.about {
+  background-color: var(--neutrals-n-0);
+  border-top-right-radius: 5rem;
+}
+
+.about-info h2 {
+  color: var(--neutrals-n-800);
+  font: 700 2.5rem/3.25rem Poppins, sans-serif;
+}
+
+.about-info p {
+  color: var(--neutrals-n-600);
+  font: 400 1rem/1.5rem Poppins, sans-serif;
+}
+
+.about-info h3 {
+  color: var(--primary-b-300);
+  font: 500 1rem/1.5rem Poppins, sans-serif;
+}
+
+.stack__item {
+  color: var(--black);
+  font: 500 1.25rem/1.5rem Poppins, sans-serif;
+}
+
+.stack h3 {
+  color: var(--black);
+  font: 500 1.25rem/1.5rem Poppins, sans-serif;
+}
+
+.lang-item {
+  border-radius: 0.5rem;
+  background: var(--neutrals-n-10);
+}
+
+.border {
+  border-bottom: 1px solid var(--neutrals-n-40);
+}
+
+.wrapper {
+  background:
+    url(./images/footer-bg.svg) var(--primary-b-400) top right
+    no-repeat;
+  border-top-left-radius: 10rem;
+}
+
+.contact h2 {
+  color: var(--neutrals-n-0);
+  text-align: center;
+  font: 700 2.5rem/3.25rem Poppins, sans-serif;
+}
+
+.contact p {
+  color: var(--primary-b-50);
+  text-align: center;
+  font: 400 1.25rem/1.75rem Poppins, sans-serif;
+}
+
+.input {
+  background: var(--neutrals-n-0);
+  border: 1px solid var(--neutrals-n-40);
+  border-radius: 0.5rem;
+}
+
+input:focus,
+textarea:focus {
+  outline-color: var(--primary-b-300);
+}
+
+input::placeholder {
+  color: var(--neutrals-n-800);
+  font: 400 0.9375rem/1.5rem Poppins, sans-serif;
+}
+
+.footer-btn {
+  color: var(--primary-b-400);
+  font: 500 1.0625rem/1.5rem Poppins, sans-serif;
+  border: 1px solid var(--neutrals-n-0);
+  text-align: center;
+}
