@@ -1,0 +1,78 @@
+nav {
+  height: 4.5rem;
+  padding: 1rem 4rem;
+}
+
+.header-nav img {
+  display: none;
+}
+
+.nav {
+  display: flex;
+  padding: 0.625rem 0.75rem;
+  align-items: center;
+  gap: 0.625rem;
+}
+
+.intro-hero {
+  margin: 0 auto;
+  max-width: 40rem;
+}
+
+.work {
+  padding: 8rem 5rem;
+}
+
+.card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: 'img content';
+  gap: 1.3rem;
+}
+
+.card-img {
+  grid-area: img;
+  height: 100%;
+}
+
+.card-info {
+  grid-area: content;
+  padding: 1.5rem;
+}
+
+.card:nth-child(even) {
+  grid-template-areas: 'content img';
+}
+
+.about {
+  padding: 7rem;
+  flex-direction: row;
+  margin: 0 auto;
+}
+
+.about-info {
+  flex: 1;
+}
+
+.about-skills {
+  flex: 1.5;
+}
+
+.lang {
+  flex-direction: row;
+}
+
+.lang-item {
+  flex-direction: column;
+  gap: 1rem;
+  align-items: flex-start;
+  width: 5rem;
+}
+
+.lang-item h4 {
+  margin: 0;
+}
+
+.footer-btn {
+  align-self: center;
+}
