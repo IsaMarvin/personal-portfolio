@@ -180,7 +180,7 @@ footer {
 
 .wrapper {
   background:
-    url(./images/footer-bg.svg) var(--primary-b-400) top right
+    url(../images/footer-bg.svg) var(--primary-b-400) top right
     no-repeat;
   border-top-left-radius: 10rem;
 }
