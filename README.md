@@ -14,6 +14,7 @@
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
+  - [🚀 Live Demo](#live-demo)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
@@ -57,6 +58,14 @@ This is the Portfolio Microverse project! I've created it using HTML and CSS. It
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+## 🚀 Live Demo <a name="live-demo"></a>
+
+> link to the live version.
+
+- [Live Demo Link](https://isamarvin.github.io/personal-portfolio/)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 <!-- GETTING STARTED -->
 
 ## 💻 Getting Started <a name="getting-started"></a>
@@ -79,7 +88,7 @@ Run the following command:
 
 ```sh
 cd your-folder
-git clone git@github.com:IsaMarvin/Portfolio_Microverse.git
+git clone git@github.com:IsaMarvin/personal-portfolio.git
 ```
 
 ### Install
@@ -122,12 +131,12 @@ Open index.html using live server extension.
 - [ ] **[Header and Hero Section]**
 - [ ] **[Works and about me Section]**
 - [ ] **[About and Contact]**
+- [ ] **[Application Deploy]**
 
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- CONTRIBUTING -->
 
