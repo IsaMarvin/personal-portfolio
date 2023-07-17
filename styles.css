@@ -73,7 +73,7 @@ nav {
 }
 
 .intro {
-  background: url(../images/header-bg.svg) var(--neutrals-n-0);
+  background: url(./images/header-bg.svg) var(--neutrals-n-0);
   background-size: cover;
   border-bottom-left-radius: 5rem;
   padding: 7rem 1.5rem;
@@ -297,7 +297,7 @@ nav {
 
 .wrapper {
   background:
-    url(../images/footer-bg.svg) var(--primary-b-400) top right
+    url(./images/footer-bg.svg) var(--primary-b-400) top right
     no-repeat;
   border-top-left-radius: 10rem;
 }
@@ -356,7 +356,7 @@ input::placeholder {
   font: 500 1.0625rem/1.5rem Poppins, sans-serif;
   border: 1px solid var(--neutrals-n-0);
   text-align: center;
-  width: 7rem;
+  width: 9rem;
   padding: 0.75rem 1rem;
 }
 
@@ -389,7 +389,7 @@ input::placeholder {
   }
 
   .intro {
-    background: url(../images/header.svg) var(--neutrals-n-0);
+    background: url(./images/header.svg) var(--neutrals-n-0);
     background-size: cover;
     background-repeat: no-repeat;
   }
