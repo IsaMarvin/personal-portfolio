@@ -49,12 +49,18 @@ This is the Portfolio Microverse project! I've created it using HTML and CSS. It
 
 ### Key Features <a name="key-features"></a>
 
-- Implemented the Header, Hero, Works, About me and contact form
-- Implemented the contact form section.
-- Utilized flexbox and grid for layout and responsiveness.
-- Styled the elements to match the design, including fonts, colors, images, text, and margins.
-- Added button interactions such as hover, enable active effects.
-- Ensured responsiveness using responsive values in CSS rules, like percentages instead of pixels.
+Responsive Mobile Menu:
+
+- Implemented a responsive mobile menu that adapts to various screen sizes, enhancing user experience on mobile devices.
+Utilized CSS flexbox for a clean and flexible layout, making navigation links easily accessible on smaller screens.
+Smooth Transitions:
+
+- Incorporated CSS transitions to provide smooth opening and closing effects for the mobile menu.
+Enhanced visual aesthetics and user interactions with subtle animations.
+Stylish Design:
+
+- Added a close icon that allows users to easily close the mobile menu when needed, improving navigation convenience.
+Made each navigation link within the mobile menu clickable, providing intuitive and straightforward access to different sections of the website.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -128,11 +134,8 @@ Open index.html using live server extension.
 ## 🔭 Future Features <a name="future-features"></a>
 
 
-- [ ] **[Header and Hero Section]**
-- [ ] **[Works and about me Section]**
-- [ ] **[About and Contact]**
-- [ ] **[Application Deploy]**
-
+- [ ] **[details popup window]**
+- [ ] **[validate contact form]**
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>

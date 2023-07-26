@@ -3,8 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="styles.css" />
+    <script src="./js/index.js" defer></script>
     <title>IsaMarvin | Software Engineer</title>
   </head>
   <body>
@@ -12,18 +14,31 @@
       <nav>
         <div class="logo">
           <a href="#">
-            <img src="./images/my-logo.svg" alt="" />
+            <img src="./images/my-logo.svg" alt="Logo" />
           </a>
         </div>
-        <div class="header-nav">
-          <a href="#">
-            <img src="./images/hamburger.svg" alt="" class="hamburger" />
-            <ul class="nav">
-              <li class="active"><a href="#works">Portfolio</a></li>
-              <li><a href="#about">About</a></li>
-              <li><a href="#contact">Contact</a></li>
-            </ul>
-          </a>
+
+        <div class="mobile-menu">
+          <ul class="nav">
+            <li class="close"><a href="#">&times;</a></li>
+            <li><a href="#works">Portfolio</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+<div class="hamburger-btn">
+            <a href="#">
+              <img
+                src="./images/hamburger.svg"
+                alt="Open Menu"
+                class="hamburger active"
+              />
+            </a>
+          </div>
+          <div class="cancel-btn">
+            <a href="#">
+              <img src="./images/cancel.svg" alt="Close Menu" class="cancel" />
+            </a>
+          </div>
         </div>
       </nav>
     </header>
@@ -187,7 +202,7 @@
       </div>
     </section>
 
-    <section class="about">
+    <section class="about" id="about">
       <div class="about-info">
         <h2>About Myself</h2>
         <p>
@@ -274,7 +289,7 @@
 
     <footer>
       <div class="wrapper">
-        <div class="contact">
+        <div class="contact" id="contact">
           <h2>Contact me</h2>
           <p>
             If you have an application you are interested in developing, a
