@@ -1,24 +1,30 @@
-const hamburgerIcon = document.querySelector('.hamburger');
-const closeIcon = document.querySelector('.cancel');
+const hamburgerButton = document.querySelector('.hamburger-button');
+const closeButton = document.querySelector('.close-button');
 const navLinks = document.querySelector('.nav');
 
 function toggleMobileMenu() {
   navLinks.classList.toggle('active');
-  hamburgerIcon.style.display = navLinks.classList.contains('active')
-    ? 'none'
-    : 'block';
 }
 
 function closeMobileMenu() {
   navLinks.classList.remove('active');
-  hamburgerIcon.style.display = 'block';
-  closeIcon.style.display = 'none';
 }
 
-hamburgerIcon.addEventListener('click', toggleMobileMenu);
-closeIcon.addEventListener('click', closeMobileMenu);
+hamburgerButton.addEventListener('click', toggleMobileMenu);
+closeButton.addEventListener('click', closeMobileMenu);
 
 const navLinksList = document.querySelectorAll('.nav li a');
 navLinksList.forEach((link) => {
   link.addEventListener('click', closeMobileMenu);
 });
+
+function checkWindowSize() {
+  const isDesktopView = window.matchMedia('(min-width: 768px)').matches;
+  if (isDesktopView) {
+    navLinks.classList.remove('active');
+  }
+}
+
+checkWindowSize();
+
+window.addEventListener('resize', checkWindowSize);
