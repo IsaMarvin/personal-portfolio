@@ -23,6 +23,8 @@
   --lavender-mist: #ebebff;
   --base-500-secondary: #67798e;
   --deep-blue: #2230d2;
+  --royal-blue: rgba(68, 86, 245, 0.94);
+  --glass-blur: rgba(255, 255, 255, 0.8);
 }
 
 *,
@@ -40,6 +42,7 @@ html {
 
 li {
   list-style: none;
+  font: inherit;
 }
 
 a {
@@ -51,13 +54,27 @@ img {
   height: auto;
 }
 
+button {
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+
 .margin-left {
   margin-left: 0.7rem;
 }
 
-header,
 footer {
   background-color: var(--neutrals-n-0);
+}
+
+header {
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  width: 100vw;
+  backdrop-filter: blur(10px);
+  background-color: var(--glass-blur);
 }
 
 nav {
@@ -84,13 +101,12 @@ nav {
   top: 0;
   height: 100vh;
   width: 100vw;
-  padding: 2rem 1.85rem;
+  padding: 1.85rem;
   gap: 2rem;
-  background: var(--cornflower-blue);
-  mix-blend-mode: multiply;
-  z-index: 99;
+  z-index: 100;
   transition: 0.5s;
-  backdrop-filter: blur(6px);
+  background-color: var(--royal-blue);
+  backdrop-filter: blur(100px);
 }
 
 nav li a {
@@ -102,8 +118,10 @@ nav li a {
   align-self: flex-end;
 }
 
-.close a {
+.close-button {
   font: 400 2rem/2.5rem Poppins, sans-serif;
+  color: var(--neutrals-n-0);
+  font-size: 2.5rem;
 }
 
 .intro {
@@ -111,6 +129,7 @@ nav li a {
   background-size: cover;
   border-bottom-left-radius: 5rem;
   padding: 7rem 1.5rem;
+  margin-top: 4.5rem;
 }
 
 .intro-hero {
@@ -415,15 +434,15 @@ input::placeholder {
     gap: 0.625rem;
   }
 
-  .intro-hero {
-    margin: 0 auto;
-    max-width: 40rem;
-  }
-
   .nav a {
     color: var(--neutrals-n-600);
     text-align: center;
     font: 500 0.9375rem/1.25 Poppins, sans-serif;
+  }
+
+  .intro-hero {
+    margin: 0 auto;
+    max-width: 40rem;
   }
 
   .intro {
