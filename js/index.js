@@ -1,12 +1,14 @@
+import projects from './data.js';
+
 const hamburgerIcon = document.querySelector('.hamburger');
 const closeIcon = document.querySelector('.cancel');
 const navLinks = document.querySelector('.nav');
+const works = document.querySelector('#works');
+const ul = document.querySelector('#cards');
 
 function toggleMobileMenu() {
   navLinks.classList.toggle('active');
-  hamburgerIcon.style.display = navLinks.classList.contains('active')
-    ? 'none'
-    : 'block';
+  hamburgerIcon.style.display = navLinks.classList.contains('active') ? 'none' : 'block';
 }
 
 function closeMobileMenu() {
@@ -23,189 +25,184 @@ navLinksList.forEach((link) => {
   link.addEventListener('click', closeMobileMenu);
 });
 
-const projects = [
-  {
-    name: 'Tonic',
-    image: './images/snapshoot/snapshot_1.png',
-    tags: ['CANOPY', 'Back End Dev', '2015'],
-    description:
-      'A daily selection of privately personalized reads; no accounts or sign-ups required. Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.',
-    languages: ['html', 'css', 'javaScript'],
-    liveVersionLink: '#',
-  },
-  {
-    name: 'Tonic',
-    image: './images/snapshoot/snapshot_2.png',
-    tags: ['CANOPY', 'Back End Dev', '2015'],
-    description:
-      'A daily selection of privately personalized reads; no accounts or sign-ups required. Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.',
-    languages: ['html', 'css', 'javaScript'],
-    liveVersionLink: '#',
-  },
-  {
-    name: 'Tonic',
-    image: './images/snapshoot/snapshot_1.png',
-    tags: ['CANOPY', 'Back End Dev', '2015'],
-    description:
-      'A daily selection of privately personalized reads; no accounts or sign-ups required. Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.',
-    languages: ['html', 'css', 'javaScript'],
-    liveVersionLink: '#',
-  },
-  {
-    name: 'Tonic',
-    image: './images/snapshoot/snapshot_2.png',
-    tags: ['CANOPY', 'Back End Dev', '2015'],
-    description:
-      'A daily selection of privately personalized reads; no accounts or sign-ups required. Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.',
-    languages: ['html', 'css', 'javaScript'],
-    liveVersionLink: '#',
-  },
-];
+function createModalContent({
+  name, image, tags, info, languages,
+}) {
+  const modalOverlay = document.createElement('div');
+  modalOverlay.className = 'modal-overlay';
 
-const modalOverlay = document.createElement('div');
-modalOverlay.classList.add('modal-overlay');
+  const modalInfo = document.createElement('div');
+  modalInfo.className = 'modal-info';
 
-const modalContainer = document.createElement('div');
-modalContainer.classList.add('modal-container');
+  const modalTitle = document.createElement('div');
+  modalTitle.className = 'modal-title';
 
-const modalContent = document.createElement('div');
-modalContent.classList.add('modal-content');
+  const modalClose = document.createElement('div');
+  modalClose.className = 'modal-close';
 
-const closeBtn = document.createElement('span');
-closeBtn.classList.add('close-btn');
-closeBtn.innerHTML = '&times;';
+  const modalHeading = document.createElement('h3');
+  modalHeading.className = 'modal-heading';
+  modalHeading.textContent = name;
 
-modalContent.appendChild(closeBtn);
+  const cancelModal = document.createElement('img');
+  cancelModal.src = '../images/Icon - Cancel.svg';
 
-const modalTitle = document.createElement('h2');
-modalTitle.classList.add('card-title');
-modalContent.appendChild(modalTitle);
-
-const modalImage = document.createElement('img');
-modalImage.setAttribute('alt', 'Project Image');
-modalContent.appendChild(modalImage);
-
-const modalDescription = document.createElement('p');
-modalContent.appendChild(modalDescription);
-
-const modalLanguages = document.createElement('ul');
-modalLanguages.setAttribute('id', 'modalLanguages');
-modalLanguages.classList.add('card__tags');
-modalContent.appendChild(modalLanguages);
-
-const modalLiveVersionLink = document.createElement('a');
-modalLiveVersionLink.setAttribute('target', '_blank');
-modalContent.appendChild(modalLiveVersionLink);
-
-modalContainer.appendChild(modalContent);
-document.body.appendChild(modalOverlay);
-document.body.appendChild(modalContainer);
-
-// Function to show the modal popup with project details
-function showPopup(projects) {
-  modalTitle.textContent = projects.name;
-  modalLanguages.textContent = projects.tagItem;
-  modalImage.src = projects.image;
-
-  modalDescription.textContent = projects.description;
-
-  modalLanguages.innerHTML = '';
-  projects.languages.forEach((language) => {
-    const li = document.createElement('li');
-    li.textContent = language;
-    modalLanguages.appendChild(li);
+  cancelModal.addEventListener('click', () => {
+    modalOverlay.style.display = 'none';
   });
 
-  modalLiveVersionLink.href = projects.liveVersionLink;
+  const modalImg = document.createElement('img');
+  modalImg.className = 'modal-img';
+  modalImg.src = image;
 
-  modalOverlay.style.display = 'block';
-  modalContainer.style.display = 'block';
+  const modalTags = document.createElement('ul');
+  modalTags.className = 'card__tags';
+  tags.forEach((tag) => {
+    const li = document.createElement('li');
+    li.className = 'card__items';
+    li.textContent = tag;
+    modalTags.appendChild(li);
+  });
+
+  const wrap = document.createElement('div');
+  wrap.className = 'wrap';
+  const modalDescription = document.createElement('p');
+  modalDescription.className = 'modal-description';
+  modalDescription.textContent = info;
+
+  const left = document.createElement('div');
+  left.className = 'left';
+
+  const modalLang = document.createElement('ul');
+  modalLang.className = 'card__lan';
+  languages.forEach((language) => {
+    const li = document.createElement('li');
+    li.className = 'card__lists';
+    li.textContent = language;
+    modalLang.appendChild(li);
+  });
+
+  const modalBtns = document.createElement('div');
+  modalBtns.className = 'btns';
+
+  const liveBtn = document.createElement('button');
+  liveBtn.textContent = 'See live';
+  liveBtn.classList.add('modal-btn', 'card__button');
+
+  const liveImg = document.createElement('img');
+  liveImg.src = '../images/live.svg';
+  liveImg.alt = 'see the project in action';
+
+  liveBtn.appendChild(liveImg);
+  const sourceBtn = document.createElement('button');
+  sourceBtn.textContent = 'See source';
+  sourceBtn.classList.add('modal-btn', 'card__button');
+
+  const sourceImg = document.createElement('img');
+  sourceImg.src = '../images/git.svg';
+  sourceImg.alt = 'see the project in action';
+  sourceBtn.appendChild(sourceImg);
+
+  document.body.appendChild(modalOverlay);
+  modalOverlay.appendChild(modalInfo);
+  modalInfo.appendChild(modalTitle);
+  modalTitle.appendChild(modalClose);
+  modalClose.appendChild(modalHeading);
+  modalClose.appendChild(cancelModal);
+  modalTitle.appendChild(modalTags);
+  modalInfo.appendChild(modalImg);
+  modalInfo.appendChild(wrap);
+  wrap.appendChild(modalDescription);
+  wrap.appendChild(left);
+  left.appendChild(modalLang);
+  left.appendChild(modalBtns);
+  modalBtns.appendChild(liveBtn);
+  modalBtns.appendChild(sourceBtn);
 }
 
-// Function to close the modal popup
-function closePopup() {
-  modalOverlay.style.display = 'none';
-  modalContainer.style.display = 'none';
-}
-
-// Add event listener to the close button to hide the modal
-closeBtn.addEventListener('click', closePopup);
-
-// Function to create a card element for each project
-function createCard(project) {
+function createCardElement({
+  name, image, tags, description, languages, info,
+}) {
   const card = document.createElement('div');
-  card.classList.add('card');
+  card.className = 'card';
 
-  const cardImage = document.createElement('img');
-  cardImage.classList.add('card-img');
-  cardImage.src = project.image;
-  cardImage.alt = project.name;
-  card.appendChild(cardImage);
+  const img = document.createElement('img');
+  img.className = 'card-img';
+  img.src = image;
 
   const cardInfo = document.createElement('div');
-  cardInfo.classList.add('card-info');
+  cardInfo.className = 'card-info';
 
   const cardTitle = document.createElement('div');
-  cardTitle.classList.add('card-title');
+  cardTitle.className = 'card-title';
 
-  const titleHeading = document.createElement('h3');
-  titleHeading.textContent = project.name;
-  cardTitle.appendChild(titleHeading);
+  const heading = document.createElement('h3');
+  heading.textContent = name;
 
   const cardTags = document.createElement('ul');
-  cardTags.classList.add('card__tags');
-
-  project.tags.forEach((tagName) => {
-    const tagItem = document.createElement('li');
-    tagItem.classList.add('card__items');
-    tagItem.textContent = tagName;
-    cardTags.appendChild(tagItem);
+  cardTags.className = 'card__tags';
+  tags.forEach((tag) => {
+    const li = document.createElement('li');
+    li.className = 'card__items';
+    li.textContent = tag;
+    cardTags.appendChild(li);
   });
-
-  cardTitle.appendChild(cardTags);
-  cardInfo.appendChild(cardTitle);
-
-  const cardDescription = document.createElement('div');
-  cardDescription.classList.add('card-description');
-
-  const descriptionPara = document.createElement('p');
-  descriptionPara.textContent = project.description;
-  cardDescription.appendChild(descriptionPara);
 
   const cardLanguages = document.createElement('ul');
-  cardLanguages.classList.add('card__lan');
-
-  project.languages.forEach((language) => {
-    const languageItem = document.createElement('li');
-    languageItem.classList.add('card__lists');
-    languageItem.textContent = language;
-    cardLanguages.appendChild(languageItem);
+  cardLanguages.className = 'card__lan';
+  languages.forEach((language) => {
+    const li = document.createElement('li');
+    li.className = 'card__lists';
+    li.textContent = language;
+    cardLanguages.appendChild(li);
   });
 
-  cardDescription.appendChild(cardLanguages);
+  const cardDescription = document.createElement('p');
+  cardDescription.className = 'card-description';
+  cardDescription.textContent = description;
 
-  const seeProjectButton = document.createElement('button');
-  seeProjectButton.classList.add('card__button');
-  seeProjectButton.textContent = 'See Project';
-  cardDescription.appendChild(seeProjectButton);
+  const button = document.createElement('button');
+  button.className = 'card__button';
+  button.textContent = 'See Projects';
 
+  button.addEventListener('click', () => {
+    const project = {
+      name,
+      image,
+      tags,
+      description,
+      languages,
+      info,
+    };
+    createModalContent(project);
+  });
+
+  card.appendChild(img);
+  cardInfo.appendChild(cardTitle);
+  cardTitle.appendChild(heading);
   cardInfo.appendChild(cardDescription);
+  cardTitle.appendChild(cardTags);
+  cardInfo.appendChild(cardLanguages);
+  cardInfo.appendChild(button);
   card.appendChild(cardInfo);
 
   return card;
 }
 
-// Get the section where the cards will be appended
-const worksSection = document.getElementById('works');
-
-// Create cards for each project and append them to the works section
-projects.forEach((project) => {
-  const card = createCard(project);
-  worksSection.appendChild(card);
-
-  // Add event listener to project buttons to show the modal
-  const projectButtons = card.querySelectorAll('.card__button');
-  projectButtons.forEach((button) => {
-    button.addEventListener('click', () => showPopup(project));
+function createCards(projects) {
+  const cardElements = projects.map(createCardElement);
+  const fragment = document.createDocumentFragment();
+  cardElements.forEach((cardElement) => {
+    const liElement = document.createElement('li');
+    liElement.appendChild(cardElement);
+    fragment.appendChild(liElement);
   });
-});
+  ul.appendChild(fragment);
+}
+
+function cards() {
+  createCards(projects);
+  works.appendChild(ul);
+}
+
+cards();
