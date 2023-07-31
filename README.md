@@ -129,6 +129,12 @@ Open index.html using live server extension.
 - GitHub: [IsaMarvin](https://github.com/IsaMarvin)
 - LinkedIn: [IsaMarvin](https://www.linkedin.com/in/isamarvin/)
 
+  👤 **Vivek Raj**
+
+- GitHub: [@githubhandle](https://github.com/VivekRaaZ?tab=repositories)
+- Twitter: [@twitterhandle](https://twitter.com/BossVivekRaj)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/vivek-raj-a78b92256/)
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🔭 Future Features <a name="future-features"></a>
