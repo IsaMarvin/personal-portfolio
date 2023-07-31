@@ -127,7 +127,6 @@ Open index.html using live server extension.
 👤 IsaMarvin
 
 - GitHub: [IsaMarvin](https://github.com/IsaMarvin)
-- LinkedIn: [IsaMarvin](https://www.linkedin.com/in/isamarvin/)
 
   👤 **Vivek Raj**
 
@@ -161,7 +160,7 @@ Open index.html using live server extension.
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](../../issues/).
+Feel free to check the [issues page](https://github.com/IsaMarvin/personal-portfolio/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
