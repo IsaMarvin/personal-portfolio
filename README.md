@@ -49,18 +49,20 @@ This is the Portfolio Microverse project! I've created it using HTML and CSS. It
 
 ### Key Features <a name="key-features"></a>
 
-Responsive Mobile Menu:
 
-- Implemented a responsive mobile menu that adapts to various screen sizes, enhancing user experience on mobile devices.
-Utilized CSS flexbox for a clean and flexible layout, making navigation links easily accessible on smaller screens.
-Smooth Transitions:
+Project Cards and Modals:
 
-- Incorporated CSS transitions to provide smooth opening and closing effects for the mobile menu.
-Enhanced visual aesthetics and user interactions with subtle animations.
-Stylish Design:
-
-- Added a close icon that allows users to easily close the mobile menu when needed, improving navigation convenience.
-Made each navigation link within the mobile menu clickable, providing intuitive and straightforward access to different sections of the website.
+- Display an interactive grid of project cards, each showcasing a unique project with its title, image, tags, and description.
+  
+- Clicking on a card reveals a modal with comprehensive project information, including supported programming languages and live version links.
+  
+- Users can easily navigate through project details without leaving the main page, enhancing the browsing experience.
+  
+- The projects array serves as a data source, allowing seamless addition of new projects or updates to existing ones.
+  
+- Easily customize project details and content by modifying the data within the projects array.
+  
+- Project cards and modals are generated dynamically using JavaScript, minimizing initial loading times.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -146,9 +148,8 @@ Open index.html using live server extension.
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-
-- [ ] **[details popup window]**
 - [ ] **[validate contact form]**
+- [] **[preserve data in the browser]**
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
