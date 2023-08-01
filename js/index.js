@@ -36,7 +36,8 @@ checkWindowSize();
 
 window.addEventListener('resize', checkWindowSize);
 function createModalContent({
-  name, image, tags, info, languages, sourceLink, liveVersionLink, liveBtnTxt, sourceBtnTxt,
+  name, image, tags, info, languages, sourceLink, liveVersionLink,
+  liveBtnTxt, sourceBtnTxt, iconCancel, LiveImg, SourceImg,
 }) {
   const modalOverlay = document.createElement('div');
   modalOverlay.className = 'modal-overlay';
@@ -59,7 +60,7 @@ function createModalContent({
   modalHeading.textContent = name;
 
   const cancelModal = document.createElement('img');
-  cancelModal.src = '../images/iconCancel.svg';
+  cancelModal.src = iconCancel;
 
   cancelModal.addEventListener('click', () => {
     modalOverlay.style.display = 'none';
@@ -111,7 +112,7 @@ function createModalContent({
   liveBtn.classList.add('modal-btn', 'card__button');
 
   const liveImg = document.createElement('img');
-  liveImg.src = '../images/live.svg';
+  liveImg.src = LiveImg;
   liveImg.alt = 'see the project in action';
   liveImg.className = 'hover';
 
@@ -123,7 +124,7 @@ function createModalContent({
   sourceBtn.classList.add('modal-btn', 'card__button');
 
   const sourceImg = document.createElement('img');
-  sourceImg.src = '../images/git.svg';
+  sourceImg.src = SourceImg;
   sourceImg.alt = 'see the project in action';
   sourceImg.className = 'hover';
   const sourceBtnLink = document.createElement('a');
@@ -161,6 +162,9 @@ function createCardElement({
   liveVersionLink,
   liveBtnTxt,
   sourceBtnTxt,
+  iconCancel,
+  LiveImg,
+  SourceImg,
 }) {
   const card = document.createElement('div');
   card.className = 'card';
@@ -216,6 +220,9 @@ function createCardElement({
       liveVersionLink,
       liveBtnTxt,
       sourceBtnTxt,
+      iconCancel,
+      LiveImg,
+      SourceImg,
     };
     createModalContent(project);
   });
