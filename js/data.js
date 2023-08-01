@@ -7,9 +7,13 @@ const projects = [
     description:
       'A daily selection of privately personalized reads; no accounts or sign-ups required. Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.',
     languages: ['html', 'css', 'javaScript'],
+    sourceBtnTxt: 'See source',
+    liveBtnTxt: 'See live',
     liveVersionLink: '#',
+    sourceLink: '#',
     info:
     'A daily selection of privately personalized reads; no accounts or sign-ups required. Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends. Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur quas, inventore sunt sed exercitationem deleniti deserunt ipsum molestiae consectetur natus commodi',
+    iconCancel: '../images/iconCancel.svg',
   },
   {
     id: 2,
@@ -19,7 +23,10 @@ const projects = [
     description:
       'A daily selection of privately personalized reads; no accounts or sign-ups required. Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.',
     languages: ['html', 'css', 'javaScript'],
+    sourceBtnTxt: 'See source',
+    liveBtnTxt: 'See live',
     liveVersionLink: '#',
+    sourceLink: '#',
     info:
     'A daily selection of privately personalized reads; no accounts or sign-ups required. Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends. Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur quas, inventore sunt sed exercitationem deleniti deserunt ipsum molestiae consectetur natus commodi',
   },
@@ -31,7 +38,10 @@ const projects = [
     description:
       'A daily selection of privately personalized reads; no accounts or sign-ups required. Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.',
     languages: ['html', 'css', 'javaScript'],
+    sourceBtnTxt: 'See source',
+    liveBtnTxt: 'See live',
     liveVersionLink: '#',
+    sourceLink: '#',
     info:
     'A daily selection of privately personalized reads; no accounts or sign-ups required. Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends. Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur quas, inventore sunt sed exercitationem deleniti deserunt ipsum molestiae consectetur natus commodi',
   },
@@ -43,7 +53,10 @@ const projects = [
     description:
       'A daily selection of privately personalized reads; no accounts or sign-ups required. Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.',
     languages: ['html', 'css', 'javaScript'],
+    sourceBtnTxt: 'See source',
+    liveBtnTxt: 'See live',
     liveVersionLink: '#',
+    sourceLink: '#',
     info:
     'A daily selection of privately personalized reads; no accounts or sign-ups required. Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends. Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur quas, inventore sunt sed exercitationem deleniti deserunt ipsum molestiae consectetur natus commodi',
   },
