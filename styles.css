@@ -16,6 +16,7 @@
   --light-pastel-blue: #7f8cff;
   --primary-b-50: #ebebff;
   --primary-b-100: #cbcdff;
+  --primary-b-200: #a7aeff;
   --primary-b-300: #7f8cff;
   --primary-b-400: #6070ff;
   --primary-b-500: #396df2;
@@ -103,7 +104,7 @@ nav {
   width: 100vw;
   padding: 1.85rem;
   gap: 2rem;
-  z-index: 100;
+  z-index: 99;
   transition: 0.5s;
   background-color: var(--royal-blue);
   backdrop-filter: blur(100px);
@@ -160,9 +161,21 @@ nav li a {
   gap: 1rem;
 }
 
-.work {
+.modal-info img {
+  cursor: pointer;
+}
+
+.intro-social img {
+  transition: transform 0.3s ease-in-out;
+}
+
+.intro-social img:hover {
+  transform: scale(1.1);
+}
+
+.work > #cards {
   background-color: var(--neutrals-n-10);
-  padding: 7rem 1.5rem;
+  padding: 7rem 2rem;
   display: flex;
   flex-direction: column;
   gap: 8.8rem;
@@ -171,11 +184,23 @@ nav li a {
 .card {
   background-color: var(--neutrals-n-0);
   border: 1px solid var(--neutrals-n-40);
+  transition: box-shadow 0.3s, background-color 0.3s;
   border-radius: 1.5rem;
   padding: 1.5rem;
   display: flex;
   flex-direction: column;
   gap: 0.75rem;
+}
+
+.card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 1.5rem;
+  border: 2px solid var(--primary-b-200);
+  background: var(--neutrals-n-0);
+}
+
+.card-img {
+  height: 15rem;
 }
 
 .card-title {
@@ -192,6 +217,9 @@ nav li a {
 .card__tags {
   display: flex;
   gap: 0.75rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .dot {
@@ -210,6 +238,9 @@ nav li a {
 .card__items {
   color: var(--neutrals-n-100);
   font: 600 0.8125rem/1rem Poppins, sans-serif;
+  position: relative;
+  padding-left: 20px;
+  margin-bottom: 5px;
 }
 
 .card-info {
@@ -232,7 +263,7 @@ nav li a {
 
 .card__lan {
   display: flex;
-  align-items: center;
+  align-self: flex-start;
   gap: 0.5rem;
 }
 
@@ -252,8 +283,9 @@ nav li a {
   background-color: var(--neutrals-n-0);
   text-align: center;
   font: 500 1.0625rem/1.5rem Poppins, sans-serif;
-  padding: 0.75rem;
   margin: 0.75rem 0;
+  padding: 0.5rem 1rem;
+  width: 9rem;
 }
 
 .card__button:hover {
@@ -263,12 +295,126 @@ nav li a {
 
 .card__button:active {
   background: var(--deep-blue);
-  color: var(--white);
+  color: var(--neutrals-n-0);
 }
 
 .card__button:disabled {
   background: var(--neutrals-n-0);
   color: var(--neutrals-n-300);
+}
+
+.card__items:first-child {
+  padding-left: 0;
+  color: var(--neutrals-n-600);
+}
+
+.card__items::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+
+.card__items:nth-child(2)::before {
+  background-color: var(--neutrals-n-50);
+}
+
+.card__items:nth-child(3)::before {
+  background-color: var(--neutrals-n-50);
+}
+
+.modal-overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  backdrop-filter: blur(6px);
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-info {
+  border-radius: 1rem;
+  border: 1px solid var(--neutrals-n-40);
+  background-color: var(--neutrals-n-0);
+  display: inline-flex;
+  padding: 1.5rem;
+  flex-direction: column;
+  gap: 1rem;
+  margin: 1rem 2rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 90vw;
+  max-height: 90vh;
+  overflow: auto;
+}
+
+.modal-description {
+  color: var(--neutrals-n-600);
+  font-family: Poppins, sans-serif;
+  font-size: 0.9375rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5rem;
+  padding-bottom: 0.75rem;
+}
+
+.modal-heading {
+  color: var(--neutrals-n-800);
+  font: 700 2rem/2.75rem Poppins, sans-serif;
+}
+
+.modal-close {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.modal-img {
+  max-height: 30rem;
+}
+
+.card__button:hover .hover {
+  filter: invert(1);
+}
+
+.hr {
+  border: 1px solid var(--neutrals-n-40);
+  margin: 0.5rem 0;
+}
+
+.btns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  gap: 1rem;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.modal-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  gap: 0.5rem;
+  white-space: nowrap;
 }
 
 .about {
@@ -302,11 +448,15 @@ nav li a {
   font: 500 1rem/1.5rem Poppins, sans-serif;
 }
 
+.card__button--about {
+  width: 10rem;
+}
+
 .stack {
   display: flex;
   justify-content: space-between;
-  padding: 0 1.625rem 1rem 0.75rem;
   align-items: center;
+  padding: 0 1.625rem 1rem 0.75rem;
   gap: 0.75rem;
   height: 4rem;
 }
@@ -322,8 +472,8 @@ nav li a {
 }
 
 .lang {
-  display: flex;
   padding: 0.75rem;
+  display: flex;
   flex-direction: column;
   gap: 0.75rem;
 }
@@ -429,8 +579,8 @@ input::placeholder {
 
   .nav {
     display: flex;
-    padding: 0.625rem 0.75rem;
     align-items: center;
+    padding: 0.625rem 0.75rem;
     gap: 0.625rem;
   }
 
@@ -470,7 +620,8 @@ input::placeholder {
 
   .card-img {
     grid-area: img;
-    height: 100%;
+    height: 28rem;
+    width: 100%;
   }
 
   .card-info {
@@ -478,14 +629,20 @@ input::placeholder {
     padding: 1.5rem;
   }
 
-  .card:nth-child(even) {
+  .even-card {
     grid-template-areas: 'content img';
+  }
+
+  .wrap {
+    display: flex;
+    gap: 1.75rem;
+    padding-bottom: 2rem;
   }
 
   .about {
     padding: 7rem;
-    flex-direction: row;
     margin: 0 auto;
+    flex-direction: row;
   }
 
   .about-info {
@@ -502,8 +659,8 @@ input::placeholder {
 
   .lang-item {
     flex-direction: column;
-    gap: 1rem;
     align-items: flex-start;
+    gap: 1rem;
     width: 5rem;
   }
 
