@@ -16,7 +16,7 @@
   --light-pastel-blue: #7f8cff;
   --primary-b-50: #ebebff;
   --primary-b-100: #cbcdff;
-  --primary-b-200: #A7AEFF;
+  --primary-b-200: #a7aeff;
   --primary-b-300: #7f8cff;
   --primary-b-400: #6070ff;
   --primary-b-500: #396df2;
@@ -159,6 +159,10 @@ nav li a {
   display: flex;
   align-items: center;
   gap: 1rem;
+}
+
+.modal-info img {
+  cursor: pointer;
 }
 
 .intro-social img {
@@ -352,10 +356,6 @@ nav li a {
   overflow: auto;
 }
 
-.modal-info img {
-  cursor: pointer;
-}
-
 .modal-description {
   color: var(--neutrals-n-600);
   font-family: Poppins, sans-serif;
@@ -499,7 +499,8 @@ nav li a {
 }
 
 .wrapper {
-  background: url(./images/footer-bg.svg) var(--primary-b-400) top right
+  background:
+    url(./images/footer-bg.svg) var(--primary-b-400) top right
     no-repeat;
   border-top-left-radius: 10rem;
 }
