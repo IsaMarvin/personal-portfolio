@@ -584,15 +584,15 @@ input::placeholder {
     gap: 0.625rem;
   }
 
-  .intro-hero {
-    margin: 0 auto;
-    max-width: 40rem;
-  }
-
   .nav a {
     color: var(--neutrals-n-600);
     text-align: center;
     font: 500 0.9375rem/1.25 Poppins, sans-serif;
+  }
+
+  .intro-hero {
+    margin: 0 auto;
+    max-width: 40rem;
   }
 
   .intro {

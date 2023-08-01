@@ -127,7 +127,20 @@ Open index.html using live server extension.
 👤 IsaMarvin
 
 - GitHub: [IsaMarvin](https://github.com/IsaMarvin)
-- LinkedIn: [IsaMarvin](https://www.linkedin.com/in/isamarvin/)
+
+  👤 **Vivek Raj**
+
+- GitHub: [@githubhandle](https://github.com/VivekRaaZ?tab=repositories)
+- Twitter: [@twitterhandle](https://twitter.com/BossVivekRaj)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/vivek-raj-a78b92256/)
+
+
+👤 José De La Rosa
+
+- GitHub: [@jrraul4](https://github.com/jrraul4)
+- Twitter: [@joserauldelaro1](https://twitter.com/joserauldelaro1)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/jose-raul-de-la-rosa-98aa70265/)
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -147,7 +160,7 @@ Open index.html using live server extension.
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](../../issues/).
+Feel free to check the [issues page](https://github.com/IsaMarvin/personal-portfolio/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
