@@ -143,7 +143,6 @@ Open index.html using live server extension.
 - Twitter: [@joserauldelaro1](https://twitter.com/joserauldelaro1)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/jose-raul-de-la-rosa-98aa70265/)
 
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🔭 Future Features <a name="future-features"></a>
