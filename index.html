@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="styles.css" />
     <script type="module" src="./js/index.js" defer></script>
     <script type="module" src="./js/data.js"></script>
+    <script type="module" src="./js/formValidation.js" defer></script>
     <title>IsaMarvin | Software Engineer</title>
   </head>
   <body>
@@ -188,6 +189,7 @@
             class="form"
             action="https://formspree.io/f/xyyoyylo"
             method="post"
+            id="contact-form"
           >
             <div class="form-items">
               <label for="name">
@@ -205,7 +207,7 @@
                 <input
                   class="input"
                   type="email"
-                  name="user email"
+                  name="user-email"
                   id="email"
                   placeholder="Email (ex: jane@gmail.com)"
                   required
@@ -222,9 +224,12 @@
                   required
                 ></textarea>
               </label>
-              <button class="footer-btn card__button" type="submit">
-                Get In Touch
-              </button>
+              <div class="form-btns">
+                <button class="footer-btn card__button" type="submit">
+                  Get In Touch
+                </button>
+                <span id="error-message"></span>
+              </div>
             </div>
           </form>
         </div>

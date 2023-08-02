@@ -50,20 +50,15 @@ This is the Portfolio Microverse project! I've created it using HTML and CSS. It
 ### Key Features <a name="key-features"></a>
 
 
-Project Cards and Modals:
+Key Features:
 
-- Display an interactive grid of project cards, each showcasing a unique project with its title, image, tags, and description.
-  
-- Clicking on a card reveals a modal with comprehensive project information, including supported programming languages and live version links.
-  
-- Users can easily navigate through project details without leaving the main page, enhancing the browsing experience.
-  
-- The projects array serves as a data source, allowing seamless addition of new projects or updates to existing ones.
-  
-- Easily customize project details and content by modifying the data within the projects array.
-  
-- Project cards and modals are generated dynamically using JavaScript, minimizing initial loading times.
+- Client-Side Email Validation: Enhance user experience with immediate feedback by validating email format on the client side before form submission.
 
+- Error Message Display: Show clear error messages for users when they provide an email that is not in lowercase, helping them correct their input.
+
+- Customizable Styles: Leverage CSS custom variables (variables) to ensure consistent theming and easy customization of colors and fonts.
+
+  
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🚀 Live Demo <a name="live-demo"></a>
@@ -143,14 +138,13 @@ Open index.html using live server extension.
 - Twitter: [@joserauldelaro1](https://twitter.com/joserauldelaro1)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/jose-raul-de-la-rosa-98aa70265/)
 
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **[validate contact form]**
-- [] **[preserve data in the browser]**
-
+- [] **[Preserve data in the browser]**
+- [] **[Code Refactoring]**
+- [] **[Integration of Real Data]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
