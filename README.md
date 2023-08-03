@@ -50,13 +50,11 @@ This is the Portfolio Microverse project! I've created it using HTML and CSS. It
 ### Key Features <a name="key-features"></a>
 
 
-Key Features:
+Key Features: Local Storage for Form Data
 
-- Client-Side Email Validation: Enhance user experience with immediate feedback by validating email format on the client side before form submission.
+- Automatic Data Preservation: The implemented local storage functionality ensures that user-entered data in the form is automatically saved. Even if users navigate away from the page or accidentally refresh it, their input remains intact, providing a seamless experience.
 
-- Error Message Display: Show clear error messages for users when they provide an email that is not in lowercase, helping them correct their input.
-
-- Customizable Styles: Leverage CSS custom variables (variables) to ensure consistent theming and easy customization of colors and fonts.
+- Persistent User Sessions: Users can return to the form at a later time and find their previously entered data still available. This feature eliminates the need for users to re-enter information, enhancing user satisfaction and convenience.
 
   
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -142,7 +140,7 @@ Open index.html using live server extension.
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [] **[Preserve data in the browser]**
+- [] **[User-Friendly Reset Option For Form]**
 - [] **[Code Refactoring]**
 - [] **[Integration of Real Data]**
 
