@@ -9,6 +9,7 @@
     <script type="module" src="./js/index.js" defer></script>
     <script type="module" src="./js/data.js"></script>
     <script type="module" src="./js/formValidation.js" defer></script>
+    <script type="module" src="./js/localStorage.js" defer></script>
     <title>IsaMarvin | Software Engineer</title>
   </head>
   <body>
@@ -185,12 +186,7 @@
             feature that you need built or a project that needs coding. I’d love
             to help with it
           </p>
-          <form
-            class="form"
-            action="https://formspree.io/f/xyyoyylo"
-            method="post"
-            id="contact-form"
-          >
+          <form class="form" id="contact-form">
             <div class="form-items">
               <label for="name">
                 <input
@@ -225,13 +221,11 @@
                 ></textarea>
               </label>
               <div class="form-btns">
-                <button class="footer-btn card__button" type="submit">
-                  Get In Touch
-                </button>
+                <button class="footer-btn card__button" type="submit">Get In Touch</button>
                 <span id="error-message"></span>
               </div>
             </div>
-          </form>
+          </form>          
         </div>
       </div>
     </footer>
