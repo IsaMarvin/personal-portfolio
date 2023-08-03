@@ -140,7 +140,7 @@ Open index.html using live server extension.
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [] **[Preserve data in the browser]**
+- [] **[User-Friendly Reset Option For Form]**
 - [] **[Code Refactoring]**
 - [] **[Integration of Real Data]**
 
